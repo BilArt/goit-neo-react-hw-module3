@@ -32,11 +32,11 @@ function App() {
   return (
     <div>
       <h1>Phonebook</h1>
+      <ContactForm onSubmit={addContact} />
       <SearchBox
         searchTerm={searchTerm}
         onSearchChange={(e) => setSearchTerm(e.target.value)}
       />
-      <ContactForm onSubmit={addContact} /> {/* Добавление новой формы */}
       <ContactList contacts={filteredContacts} onDelete={deleteContact} />
     </div>
   );

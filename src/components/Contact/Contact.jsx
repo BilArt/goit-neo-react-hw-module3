@@ -9,7 +9,7 @@ function Contact({ contact, onDelete }) {
         <p>{contact.number}</p>
       </div>
 
-      <button onClick={() => onDelete(contact.id)}>Delete</button>
+      <button className={styles.contactBlock_button} onClick={() => onDelete(contact.id)}>Delete</button>
     </li>
   );
 }
